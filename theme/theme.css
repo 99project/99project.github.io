@@ -1,0 +1,123 @@
+/*
+* Base Styles
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    color: #1F1F1F;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+a, a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #3668FF;
+}
+
+a, a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+* Layout Styles
+*/
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    display: inline-block;
+}
+
+#header, #content, #footer {
+    padding: 0 1em 0 1em;
+}
+
+#header h1 {
+    text-align: left;
+}
+
+#content {
+    text-align: justify;
+}
+
+#sidebar {
+    text-align: left;
+    border: 0.1em solid #B1B1B1;
+    padding: 1em;
+    margin: 1em;
+    height: auto;
+}
+
+#footer {
+    padding-top: 3em;
+}
+
+
+/*
+Modules Styles
+*/
+
+.gbox {
+    padding: 0.5em 0 0.5em 0;
+}
+
+ul.entries {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li.entrie {}
+
+li.entrie .title {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1em;
+}
+
+li.entrie .description {
+    margin-left: 2.6em;
+}
+
+
+/*
+Theme Styles
+*/
+
+h2.title {
+    padding: 0.2em;
+}
+
+.rounded-corners {
+    -moz-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+    -khtml-border-radius: 0.6em;
+    border-radius: 0.6em;
+}
+
+
+/*
+
+Responsive Styles
+ */
+
+@media screen and (max-width: 768px) {
+    #grid-content {
+        order: 2;
+    }
+    #grid-sidebar {
+        order: 1;
+    }
+}
